@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/bf4a04ec75.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="section-1">
+        <div class="nav">
+        </div>
+        <div class="icons">
+           <i class="fa fa-home" id="icon-h" onclick="changeStage(id),changeState('home')"></i>
+           <i class="fa-solid fa-user" id="icon-a" onclick="changeStage(id),changeState('about')"></i>
+           <i class="fas fa-folder" id="icon-p" onclick="changeStage(id),changeState('projects')"></i>
+           <i class="fa-solid fa-paintbrush" id="icon-i" onclick="changeStage(id),changeState('interests')"></i>
+           <i class="fa-solid fa-palette" id="icon-c" onclick="changeStage(id),changeState('contact')"></i>
+           <i class="fa-solid fa-splotch" id="icon-r" onclick="changeStage(id),changeState('projects')"></i>
+        </div>
+        <section class="home inactive" id="home">
+            <div class="flex">
+                <div class="intro">
+                 <h2>Hello Everyone,</h2>
+                 <h1>I am Sanika Mandhare,</h1>
+                 <p>A passionate web developer who thrives on merging creative concepts with technical prowess. My journey is all about transforming ideas into captivating digital experiences.</p>
+                 <div class="btns">
+                    <button>Know more</button>
+                    <button>Download Resume</button>
+                 </div>
+            </div>
+            <div class="profile">
+                <img src="" alt="">
+            </div>
+            </div>
+        </section>
+        <section class="about inactive" id="about"><h1>About</h1></section>
+        <section class="interests inactive" id="interests">
+            <div class="logos">
+            </div>
+        </section>
+        <section class="contact inactive" id="contact">
+            <div class="form">
+                <h1>Contact Me</h1>
+                <label for="">Name</label>
+                <input type="text" placeholder="Name">
+                <label for="">Email</label>
+                <input type="email" placeholder="Email">
+                <label for="">Contact Number</label>
+                <input type="number" placeholder="Contact no">
+            </div>
+        </section>
+        <section class="projects inactive" id="projects"> 
+            <div class="pro">
+                 <div class="card">
+                <img src="./manageCasa.png" alt="">
+                <div class="overlay">
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repudiandae! Labore, expedita explicabo! Quis recusandae fugiat expedita? Tenetur, assumenda eum similique autem quae ut, commodi velit aspernatur ullam alias error!</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./movieApp.png" alt="">
+                <div class="overlay">
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repudiandae! Labore, expedita explicabo! Quis recusandae fugiat expedita? Tenetur, assumenda eum similique autem quae ut, commodi velit aspernatur ullam alias error!</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./manageCasa.png" alt="">
+                <div class="overlay">
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repudiandae! Labore, expedita explicabo! Quis recusandae fugiat expedita? Tenetur, assumenda eum similique autem quae ut, commodi velit aspernatur ullam alias error!</div>
+                </div>
+            </div>
+            </div>
+           
+        </section>
+    </section>
+    <!-- Icons 
+    <i class="fa fa-home" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <i class="fa fa-android" aria-hidden="true"></i>
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-play" aria-hidden="true"></i>
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-file"></i>
+    <i class="fa-duotone fa-user-secret"></i>
+    <i class="fa-solid fa-download"></i>
+    <i class="fa-solid fa-caret-up"></i>-->
+   <script src="./index.js"></script> 
+</body>
+</html>

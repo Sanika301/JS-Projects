@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: rgb(210, 160, 190);
+            background-image: url(./temp.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:85vh;
+        }
+        .each{
+            align-items: center;
+            /* border: solid 1px black; */
+            width: 350px;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color:rgba(255, 255, 255, 0.095);
+            justify-content: center;
+            padding: 155px 0px;
+            margin: 150px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 18px;
+            gap: 85px;
+            color: white;
+            flex-wrap: wrap;
+        }
+        .each input{
+            padding: 15px;
+            font-size: 25px;
+            border-radius: 8px;
+            border: none;
+        }
+        .each label{
+            font-size: 30px;
+        }
+        .overall{
+            justify-content: center;
+            display: flex;
+            border-radius: 18px;
+            gap: 45px;
+            flex-wrap: wrap;
+            /* border: solid 1px black; */
+        }
+        .head{
+            /* border: solid 1px black; */
+            width: fit-content;
+            margin: auto;
+            font-size: 20px;
+        }
+        @media screen and (max-width:800px){
+            .main{
+            background-color:rgba(255, 255, 255, 0.095);
+            justify-content: center;
+            padding: 155px 0px;
+            margin: 150px 15px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 18px;
+            gap: 85px;
+            flex-wrap: wrap;
+        }
+        .head{
+            /* border: solid 1px black; */
+            width: fit-content;
+            margin: auto;
+            font-size: 15px;
+        }
+        .each input{
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 8px;
+            border: none;
+        }
+        .each label{
+            font-size: 20px;
+        }
+        .overall{
+            /* border: solid 1px black; */
+            width: 300px;
+            margin:0px auto;
+        }
+        .each{
+            align-items: center;
+            /* border: solid 1px black; */
+            /* width: 350px; */
+            box-sizing: border-box;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="head">
+            <h1>Temperature Converter</h1>
+    </div>
+    <div class="overall">
+    <div class="each">
+        <label for="">Celius</label>
+        <input type="number" value="0" id="cel">
+    </div>
+    <div class="each">
+    <label for="">Fahrehneit</label>
+    <input type="number" value="32" id="fah">
+    </div> 
+    </div>
+    </div>
+    <script>
+        let c=document.getElementById("cel");
+        let f=document.getElementById("fah");
+        
+        c.addEventListener('input',function () {
+            let  fah=(c.value)*9/5 +32;
+            f.value=fah;
+        })
+        f.addEventListener('input',function () {
+            let cel=((f.value)-32)*5/9;
+            c.value=cel;
+        })
+    </script>
+    
+</body>
+</html>

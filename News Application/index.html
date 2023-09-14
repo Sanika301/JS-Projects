@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-API</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+    <section class="header">
+        <div class="logo">
+            <img src="./sanika-logo-ring.png" alt="" class="sanika-logo">
+        </div>
+        <div class="labels">
+            <button class="option" id="ipl" onclick="searchItem('ipl')">IPL</button>
+            <button class="option" id="finance" onclick="searchItem('finance')">Finance</button>
+            <button class="option" id="politics" onclick="searchItem('politics')">Politics</button>
+        </div>
+        <div class="search">
+            <input type="text" id="search-bar" placeholder="Science">
+            <button class="search-btn" id="search-btn" onclick="btnclicked()">Search</button>
+        </div>
+    </section>
+    </nav>
+   
+    <section class="main">
+        <div class="cards-container" id="cards-container">
+        </div>
+    </section>
+    <template class="news-template-card" id="news-template-card"> 
+        <div class="card">
+        <img src="./nature.jpg" alt="" class="news-img" id="news-img">
+        <p class="title" id="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="source" id="source">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p class="description" id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, unde explicabo quas delectus, repudiandae nobis veritatis molestias ut perspiciatis, totam sequi placeat tenetur consectetur nulla sapiente velit. Id, accusantium laboriosam?
+        Dolore sapiente commodi, autem eius ipsam atque, expedita excepturi, asperiores saepe libero itaque. Eos soluta, dolor est dolores enim amet nostrum delectus necessitatibus aliquid a officiis culpa nesciunt ullam labore?</p>
+    </div></template>
+    <script src="./index.js"></script>
+</body>
+</html>

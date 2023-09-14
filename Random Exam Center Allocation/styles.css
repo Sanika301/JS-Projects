@@ -1,0 +1,52 @@
+body{
+    color: white;
+    padding:80px;
+}
+.card h1{
+    text-align: center;
+    transition:ease-in .5s;
+    color: white;
+}
+.card
+{
+    max-width:800px;
+    border-radius: 15px;
+    background-color: rgb(136, 1, 53);
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin:50px auto;
+    transition:ease .5s;
+}
+.card input
+{
+    border:none;
+    padding:20px;
+    background-color:white;
+    color:red;
+    border-radius: 8px;
+    font-size: 20px;
+    transition:ease .5s;
+}
+.card button{
+    padding:12px;
+    font-size: 25px;
+    background-color:greenyellow;
+    border-radius:8px;
+    border:none;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:ease .5s;
+}
+.card button:hover
+{
+    border:solid 3px greenyellow;
+    background-color: transparent;
+    color: greenyellow;
+}
+.card input
+{
+    outline: none;
+}
